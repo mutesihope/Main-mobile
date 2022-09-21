@@ -1,0 +1,84 @@
+header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-left: 90px;
+}
+
+
+@media  (max-width: 768px) {
+    .professional {
+        background: url(/icons/illastrallation/header-illsutration-mobile.svg);
+    }
+   
+    .welcome {
+        width: 90px;
+        height: 28px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        align-items: center;
+        text-align: center;
+        color: #28352F;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        
+
+    }
+    .hamburger {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        position: relative;
+        
+      }
+    
+      .name {
+         width: 327px;
+         font-weight: 700;
+         font-size: 40px;
+         line-height: 52px;
+         text-align: center;
+         color: #172B4D;
+         flex: none;
+         order: 0;
+         flex-grow: 0;
+         margin-left: 15%;
+      } 
+
+      .job-title {
+        width: 327px;
+         font-weight: 700;
+         font-size: 40px;
+         line-height: 52px;
+         text-align: center;
+         color: #174d1a;
+         flex: none;
+         order: 0;
+         flex-grow: 0;
+         margin-left: 15%;
+      }
+      .text{
+width: 327px;
+height: 164px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #172B4D;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin-left: 15%;
+      }
+      .icon {
+        margin-left: 25%;
+      
+      }
+      
+
+}
