@@ -1,0 +1,90 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 350px) {
+  .professional {
+    background-image: url("icons/illastrallation/header-illsutration-mobile@2x.png");
+    background-size: cover;
+    padding: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .welcome {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .hamburger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    position: relative;
+  }
+
+  .pro-title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #172b4d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .job-title {
+    color: #41724d;
+  }
+
+  .text {
+    width: 100%;
+    height: 164px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172b4d;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    cursor: pointer;
+  }
+
+  .icon {
+    width: 170.17px;
+    height: 20px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  li {
+    list-style: none;
+    margin-right: 15px;
+  }
+}
