@@ -1,4 +1,4 @@
-*{
+* {
   font-family: 'Inter', sans-serif;
 }
 
@@ -15,13 +15,13 @@ header {
     background-size: cover;
     padding: 20px;
     background-repeat: no-repeat;
-}
+  }
 
   .welcome {
     text-decoration: none;
     color: black;
     font-weight: bold;
-}
+  }
 
   .hamburger {
     width: 35px;
@@ -29,7 +29,7 @@ header {
     background-color: black;
     margin: 6px 0;
     position: relative;
-}
+  }
 
   .pro-title {
     width: 100%;
@@ -42,11 +42,11 @@ header {
     flex: none;
     order: 0;
     flex-grow: 0;
-}
+  }
 
   .job-title {
     color: #41724d;
-}
+  }
 
   .text {
     width: 100%;
@@ -61,7 +61,7 @@ header {
     order: 1;
     flex-grow: 0;
     cursor: pointer;
-}
+  }
 
   .icon {
     width: 170.17px;
@@ -72,7 +72,7 @@ header {
     display: flex;
     margin: 0 auto;
     gap: 10px;
-}
+  }
 
   .link {
     display: flex;
@@ -81,10 +81,10 @@ header {
     padding: 15px;
     width: 350px;
     margin: 0 auto;
-}
+  }
 
   li {
     list-style: none;
     margin-right: 15px;
-}
+  }
 }
