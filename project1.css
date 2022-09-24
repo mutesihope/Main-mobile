@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -20,6 +20,7 @@ header {
   color: black;
   font-size: 1.25rem;
   font-weight: 600;
+  margin-left: 3px;
 }
 
 button {
@@ -45,170 +46,142 @@ button {
   width: 327px;
 }
 
-@media (max-width: 768px) {
-  nav {
-    margin-right: 15px;
-    cursor: pointer;
-  }
-
-  .professional {
-    display: flex;
-    flex-direction: column;
-    height: 648px;
-    background-image: url("icons/illastrallation/header-illsutration-mobile@2x.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .welcome {
-    margin-left: 3px;
-  }
-
-  .hamburger {
-    width: 1.5rem;
-    height: 3px;
-    border-radius: 2em;
-    background-color: black;
-    margin: 6px 0;
-    position: relative;
-  }
-
-  .pro-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .job-title {
-    color: #41724d;
-  }
-
-  .text {
-    width: 327px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    color: #172b4d;
-    margin: 1.8rem 2rem 0 1.2rem;
-  }
-
-  .icon {
-    margin-top: 90px;
-  }
-
-  .link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  ul li {
-    list-style: none;
-  }
-
-  .link li {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-size: cover;
-  }
-
-  /* main1 */
-  .main1 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-
-    /* Theme 2 / Neutral 10 */
-
-    background: #ebf0ee;
-
-    /* Theme 2 / Neutral 9 */
-
-    border: 1px solid #d0d9d4;
-    border-radius: 8px;
-  }
-
-  /* inside main1 */
-  .div1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    gap: 16px;
-    position: absolute;
-    width: 369px;
-    height: 222px;
-    left: calc(50% - 369px / 2);
-    bottom: 0;
-
-    /* Neutrals/N0 */
-
-    background: #fff;
-    border-radius: 8px;
-  }
-
-  .h1 {
-    width: 337px;
-    height: 57px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #172b4d;
-  }
-
-  .work-section .work-header {
-    width: 327px;
-    line-height: 75px;
-  }
-
-  .work-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 68px;
-  }
-
-  .about-section {
-    background-image:
-      url(/icons/illastrallation/illustration1-about-me-mobile.svg),
-      url(/icons/illastrallation/illustration-about-me-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: right -2.1%, 6% -4%;
-  }
-
-  .about-section .about-text {
-    gap: 24px;
-    width: 351px;
-    height: 333px;
-    text-align: center;
-  }
-
-  .profession-skills {
-    row-gap: 24px;
-  }
+nav {
+  margin-right: 15px;
+  cursor: pointer;
 }
 
-.down-arrow {
+.professional {
+  display: flex;
+  flex-direction: column;
+  height: 648px;
+  background-image: url("icons/illastrallation/header-illsutration-mobile@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hamburger {
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 2em;
+  background-color: black;
+  margin: 6px 0;
+  position: relative;
+}
+
+.pro-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job-title {
+  color: #36b37e;
+}
+
+.text {
+  width: 327px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
   text-align: center;
-  margin-top: 48px;
+  color: #172b4d;
+  margin: 1.8rem 2rem 0 1.2rem;
+}
+
+.icon {
+  margin-top: 90px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+.link li {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: cover;
+}
+
+/* main1 */
+.main1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  /* Theme 2 / Neutral 10 */
+
+  background: #ebf0ee;
+
+  /* Theme 2 / Neutral 9 */
+
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+/* inside main1 */
+.div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  position: absolute;
+  width: 369px;
+  height: 222px;
+  left: calc(50% - 369px / 2);
+  bottom: 0;
+
+  /* Neutrals/N0 */
+
+  background: #fff;
+  border-radius: 8px;
+}
+
+.h1 {
+  width: 337px;
+  height: 57px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #172b4d;
 }
 
 .work-section .work-header {
+  width: 327px;
+  line-height: 75px;
   text-align: center;
   font-weight: 700;
   font-size: 2.5rem;
   color: #172b4d;
   margin-top: 64px;
+}
+
+.work-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 68px;
+}
+
+.down-arrow {
+  text-align: center;
+  margin-top: 48px;
 }
 
 .bottom-border {
@@ -312,6 +285,11 @@ button {
   align-items: center;
   text-align: center;
   justify-content: center;
+  background-image:
+    url(/icons/illastrallation/illustration1-about-me-mobile.svg),
+    url(/icons/illastrallation/illustration-about-me-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right -2.1%, 6% -4%;
 }
 
 .about-section .about-text {
@@ -343,6 +321,7 @@ button {
   display: grid;
   justify-content: center;
   margin-bottom: 20px;
+  row-gap: 24px;
 }
 
 .profession-skills .card2 {
@@ -383,7 +362,7 @@ button {
   line-height: 16px;
   letter-spacing: 0.03em;
   background-color: #fff;
-  color: #3a4a42;
+  color: #36b37e;
   list-style: none;
   padding: 12px;
 }
