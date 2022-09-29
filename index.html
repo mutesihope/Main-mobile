@@ -17,16 +17,25 @@
   <body>
     <header>
       <a class="welcome" href="">Welcome</a>
-      <nav class="menu">
+      
+      <nav id="mobile-nav" class="menu">
         <div class="hamburger"></div>
         <div class="hamburger"></div>
         <div class="hamburger"></div>
+      </nav>
+
+      <nav id="desktop-nav" hidden>
+        <ul>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <section class="professional">
       <div class="pro-title">
-        <h1 class="name title">Hey there. I’m Mariane</h1>
+        <h1 class="name title">Hey there. I’m Hope</h1>
         <h2 class="job-title title">I’m a software developer</h2>
         <p class="text">
           I can help you build a product , feature or website Look through some
@@ -259,6 +268,9 @@
     <!-- about section -->
     <section class="about-section">
       <div class="about-text">
+        <img src="icons/desktopimage/illustration-about me-1-desktop@2x.png" alt="" class="image1">
+        <img src="icons/desktopimage/illustration-about-me-2-desktop@2x.png" alt="" class="image2">
+
         <h1 class="primary-text">About me</h1>
         <p class="secondary-text .bg-top">
           I can help you build a product , feature or website Look through some
@@ -568,6 +580,7 @@
     </section>
 
     <section class="form-section">
+      <div class="workii">
       <p class="text">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
@@ -584,6 +597,12 @@
         <textarea maxlength="500" name="message" placeholder="Enter text here" required></textarea>
         <button type="submit" id="submit-btn">Get in touch</button>
       </form>
+      <img src="icons/desktopimage/contactfirstbimage.png" alt="" class="image3">
+      <img src="icons/desktopimage/contactsecondbimage.png" alt="" class="image4">
+      <img src="icons/desktopimage/contactthirdbimage.png" alt="" class="image5">
+    </div>
+
+      <div class="bottom-icon">
         <div class="icon">
           <ul class="link">
             <li>
@@ -677,10 +696,11 @@
             </li>
           </ul>
         </div>
+      </div>
     </section>
 
     <footer>
-      <p>hopemutesi250@gmail.com</p>
+      <p class="footer-p">hopemutesi250@gmail.com</p>
     </footer>
   </body>
 </html>
