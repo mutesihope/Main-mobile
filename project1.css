@@ -33,7 +33,8 @@ header {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3.5rem;
-  width: 327px;
+
+  /* width: 327px; */
 }
 
 nav {
@@ -44,8 +45,9 @@ nav {
 .professional {
   display: flex;
   flex-direction: column;
-  height: 648px;
+  height: auto;
   background-image: url("icons/illastrallation/header-illsutration-mobile@2x.png");
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -441,4 +443,154 @@ footer {
   font-weight: 400;
   font-size: 20px;
   color: #42526e;
+}
+
+@media screen and (min-width: 786px) {
+  .professional {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-image: url("icons/desktopimage/Header-llustration-desktop@2x.png");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-top: 100px;
+  }
+
+  .professional .text {
+    width: 770px;
+  }
+
+  #desktop-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #desktop-nav ul {
+    display: flex;
+    gap: 32px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #344563;
+  }
+
+  #mobile-nav {
+    display: none;
+  }
+
+  .welcome {
+    display: none;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+
+  .about-text .image1 {
+    position: absolute;
+    right: 0;
+    height: 200px;
+    width: 200px;
+  }
+
+  .about-text .image2 {
+    position: absolute;
+    left: 0;
+    height: 200px;
+    width: 200px;
+  }
+
+  .about-section .secondary-text {
+    width: 770px;
+  }
+
+  .profession-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+
+  .workii {
+    display: flex;
+    justify-content: center;
+    margin-inline: 15%;
+    align-items: center;
+  }
+
+  .workii .text {
+    width: 100%;
+    text-align: left;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #172b4d;
+    margin-top: -10%;
+    margin-left: -1%;
+  }
+
+  .workii .image3 {
+    position: absolute;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    bottom: -2400;
+  }
+
+  .workii .image4 {
+    position: absolute;
+    left: 300;
+    height: 100px;
+    width: 100px;
+    bottom: -2400;
+  }
+
+  .workii .image5 {
+    position: absolute;
+    right: 0;
+    height: 200px;
+    width: 200px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 330px;
+    margin: 4px 4px 4px 5px;
+    padding: 0;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  form textarea {
+    width: 100%;
+  }
+
+  form button {
+    align-self: flex-start;
+  }
+
+  .footer-p {
+    display: none;
+  }
+
+  .bottom-icon {
+    margin-top: 70px;
+    border-top: 1px solid #344563;
+    width: 100%;
+  }
+
+  .bottom-icon .icon {
+    margin-top: 70px;
+  }
 }
