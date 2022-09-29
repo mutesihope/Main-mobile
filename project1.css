@@ -33,6 +33,7 @@ header {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3.5rem;
+
   /* width: 327px; */
 }
 
@@ -295,7 +296,8 @@ form #submit-btn:active {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-image: url(/icons/illastrallation/illustration1-about-me-mobile.svg),
+  background-image:
+    url(/icons/illastrallation/illustration1-about-me-mobile.svg),
     url(/icons/illastrallation/illustration-about-me-mobile.svg);
   background-repeat: no-repeat;
   background-position: right -2.1%, 6% -4%;
@@ -444,7 +446,6 @@ footer {
 }
 
 @media screen and (min-width: 786px) {
-
   .professional {
     display: flex;
     flex-direction: column;
@@ -456,7 +457,8 @@ footer {
     object-fit: cover;
     margin-top: 100px;
   }
-  .professional .text{
+
+  .professional .text {
     width: 770px;
   }
 
@@ -489,22 +491,23 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
   }
-.about-text .image1{
-  position: absolute;
-  right:0;
-  height: 200px;
-  width: 200px;
-}
-.about-text .image2{
-  position: absolute;
-  left: 0;
-  height: 200px;
-  width: 200px;
-}
 
-  .about-section .secondary-text{
+  .about-text .image1 {
+    position: absolute;
+    right: 0;
+    height: 200px;
+    width: 200px;
+  }
+
+  .about-text .image2 {
+    position: absolute;
+    left: 0;
+    height: 200px;
+    width: 200px;
+  }
+
+  .about-section .secondary-text {
     width: 770px;
-
   }
 
   .profession-skills {
@@ -512,6 +515,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
   }
+
   .workii {
     display: flex;
     justify-content: center;
@@ -529,28 +533,28 @@ footer {
     margin-top: -10%;
     margin-left: -1%;
   }
-  .workii .image3{
+
+  .workii .image3 {
     position: absolute;
     left: 0;
     height: 200px;
     width: 200px;
     bottom: -2400;
-
   }
-  .workii .image4{
+
+  .workii .image4 {
     position: absolute;
     left: 300;
     height: 100px;
     width: 100px;
     bottom: -2400;
-
   }
-  .workii .image5{
+
+  .workii .image5 {
     position: absolute;
     right: 0;
     height: 200px;
     width: 200px;
-
   }
 
   form {
@@ -561,27 +565,32 @@ footer {
     width: 100%;
     height: 330px;
     margin: 4px 4px 4px 5px;
-    padding: 0px;
+    padding: 0;
   }
+
   form input {
     width: 100%;
   }
+
   form textarea {
     width: 100%;
   }
+
   form button {
     align-self: flex-start;
   }
+
   .footer-p {
     display: none;
   }
-  .bottom-icon{
+
+  .bottom-icon {
     margin-top: 70px;
     border-top: 1px solid #344563;
     width: 100%;
   }
-  .bottom-icon .icon{
-    margin-top: 70px;
 
+  .bottom-icon .icon {
+    margin-top: 70px;
   }
 }
