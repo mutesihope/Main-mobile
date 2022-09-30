@@ -288,7 +288,8 @@ form #submit-btn {
 .text-container button:hover,
 .about-text button:hover,
 form #submit-btn:hover {
-  background: #36b37f;
+  color: #36b37f;
+  background-color: #fff;
   transition: all 0.5s ease;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
