@@ -426,6 +426,13 @@ form {
   height: 330px;
 }
 
+label {
+  display: none;
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 form input {
   font-weight: 400;
   font-size: 15px;
