@@ -586,15 +586,15 @@
         chat please get in touch.
       </p>
       <form action="https://formspree.io/f/mgeqkqgz" method="post">
-        <input
+        <label for="Full name"><input
           type="text"
           name="name"
           placeholder="Full Name"
           required
           maxlength="30" required
-        />
-        <input type="email" name="email" placeholder="Email Address" required />
-        <textarea maxlength="500" name="message" placeholder="Enter text here" required></textarea>
+        /></label>
+        <label for="Email"><input type="email" name="email" placeholder="Email Address" required /></label>
+        <label for="Textarea"><textarea maxlength="500" name="message" placeholder="Enter text here" required></textarea></label>
         <button type="submit" id="submit-btn">Get in touch</button>
       </form>
       <img src="icons/desktopimage/contactfirstbimage.png" alt="" class="image3">
