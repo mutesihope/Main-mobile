@@ -308,8 +308,7 @@ form #submit-btn:active {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-image:
-    url(/icons/illastrallation/illustration1-about-me-mobile.svg),
+  background-image: url(/icons/illastrallation/illustration1-about-me-mobile.svg),
     url(/icons/illastrallation/illustration-about-me-mobile.svg);
   background-repeat: no-repeat;
   background-position: right -2.1%, 6% -4%;
@@ -424,6 +423,12 @@ form {
   gap: 20px;
   width: 320px;
   height: 330px;
+}
+ label{
+  display: none;
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 form input {
