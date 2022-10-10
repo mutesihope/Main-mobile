@@ -12,7 +12,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px;
+  margin: 20px; 
 }
 
 .welcome {
@@ -457,6 +457,43 @@ footer {
   color: #42526e;
 }
 
+#desktop-nav {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  background-color: white;
+  z-index: 10;
+}
+
+#desktop-nav ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: -160px;
+  margin-top: 60px;
+  gap:30px
+}
+
+#desktop-nav ul li {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+#desktop-nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+#mobile-nav {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 50;
+}
 @media screen and (min-width: 786px) {
   .professional {
     display: flex;
