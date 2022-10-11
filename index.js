@@ -1,23 +1,32 @@
- const hamburger = document.getElementById('mobile-nav');
+const hamburger = document.getElementById('mobile-nav');
  const dropDown = document.getElementById('desktop-nav');
- 
+ const icon = document.querySelector('.fa-bars');
+ const links = document.querySelectorAll('.nav-link');
+ const showNo = document.querySelector('.mobile-none');
 
- 
 let isShown = false;
 hamburger.addEventListener("click", function(){ 
    isShown = !isShown
    if(isShown === true){
      dropDown.style.display = "flex" 
-     menuBar.style.color = 'white'
-     menuBar.className = "your cross icon class name"
-     menuBar.style.fontSize = '15px'
-     menubar.childNodes.style.display = 'none'
+     hamburger.style.color = 'black'
+     icon.className = "fa-regular fa-x"
+     icon.style.fontSize = '15px'
+     dropDown.classList.remove('active')
    }
    else{
      dropDown.style.display = "none"
-     menuBar.style.color = '#6070ff'
-     menuBar.childNodes.className = "hamburger"
-     menuBar.style.fontSize = '30px'
+
+    icon.className = "fa-solid fa-bars"
+
    }
-  
-});
+})
+
+links.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        // dropDown.style.display = "none" 
+        dropDown.classList.toggle('active')
+        icon.className = 'fa-solid fa-bars'
+        
+    });
+  });

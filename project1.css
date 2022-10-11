@@ -1,5 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@media only screen and (max-width: 768px) {
+  
+    #desktop-nav {
+        display: none;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0px;
+        background-color: white;
+        z-index: 10;
+      }
+      
+      #desktop-nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: -160px;
+        margin-top: 60px;
+        gap:30px
+      }
+      
+      #desktop-nav ul li {
+        font-weight: 600;
+        font-size: 32px;
+      }
+      
+      #desktop-nav ul li a {
+        text-decoration: none;
+        color: black;
+      }
 
+      .mobile-none.active{
+        visibility: hidden;
+      }
+    .about-section{
+      background-image: none;
+    }  
+      
+}
 * {
   margin: 0;
   padding: 0;
@@ -63,7 +102,7 @@ nav {
   background-repeat: no-repeat;
 }
 
-.hamburger {
+.fa-solid fa-bars {
   width: 1.5rem;
   height: 3px;
   border-radius: 2em;
@@ -71,6 +110,7 @@ nav {
   margin: 6px 0;
   position: relative;
 }
+
 
 .pro-title {
   display: flex;
@@ -457,43 +497,14 @@ footer {
   color: #42526e;
 }
 
-#desktop-nav {
-  display: none;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0px;
-  background-color: white;
-  z-index: 10;
-}
-
-#desktop-nav ul {
-  display: flex;
-  flex-direction: column;
-  margin-left: -160px;
-  margin-top: 60px;
-  gap:30px
-}
-
-#desktop-nav ul li {
-  font-weight: 600;
-  font-size: 32px;
-}
-
-#desktop-nav ul li a{
-  text-decoration: none;
-  color: black;
-}
-
 #mobile-nav {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   z-index: 50;
 }
+
 @media screen and (min-width: 786px) {
   .professional {
     display: flex;
