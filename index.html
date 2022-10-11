@@ -12,23 +12,22 @@
 
     <link rel="stylesheet" href="project1.css" />
     <title>Main mobile</title>
+    <script src="https://kit.fontawesome.com/5031df2cf9.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header>
       <a class="welcome" href="">Welcome</a>
       
-      <nav id="mobile-nav" class="menu">
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
+      <nav id="mobile-nav">
+        <i class="fa-solid fa-bars"></i>
       </nav>
 
-      <nav id="desktop-nav" hidden>
+      <nav id="desktop-nav" class="mobile-none">
         <ul>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a class="nav-link" href="#work">Portfolio</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -157,7 +156,7 @@
         </svg>
       </div>
     </section>
-    <section class="work-section">
+    <section class="work-section" id="work">
       <div class="work-header">
         <h2 class="work-title">My Recent Works</h2>
       </div>
@@ -266,10 +265,10 @@
       </div>
     </section>
     <!-- about section -->
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="about-text">
-        <img src="icons/desktopimage/illustration-about me-1-desktop@2x.png" alt="" class="image1">
-        <img src="icons/desktopimage/illustration-about-me-2-desktop@2x.png" alt="" class="image2">
+        <!-- <img src="icons/desktopimage/illustration-about me-1-desktop@2x.png" alt="" class="image1"> -->
+        <!-- <img src="icons/desktopimage/illustration-about-me-2-desktop@2x.png" alt="" class="image2"> -->
 
         <h1 class="primary-text">About me</h1>
         <p class="secondary-text .bg-top">
@@ -579,7 +578,7 @@
       </div>
     </section>
 
-    <section class="form-section">
+    <section class="form-section" id="contact">
       <div class="workii">
       <p class="text">
         I'm always interested in hearing about new projects, so if you'd like to
@@ -702,5 +701,6 @@
     <footer>
       <p class="footer-p">hopemutesi250@gmail.com</p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
