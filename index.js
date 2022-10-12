@@ -25,3 +25,48 @@ links.forEach((btn) => {
     icon.className = 'fa-solid fa-bars';
   });
 });
+
+// POP UP WINDOWS
+
+const projectLists = [
+  {
+    id: '1',
+    name: 'Tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLink: './assets/first-image.jpg',
+    alt: 'first project image',
+    tech: ['html','css','javascript'],
+    liveVersion: '#',
+    source: '#'
+  },
+  {
+    id: '2',
+    name: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLink: './assets/second-image.png',
+    alt: 'second project image',
+    tech: ['html','css','javascript'],
+    liveVersion: '#',
+    source: '#'
+  },
+  {
+    id: '3',
+    name: 'Tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLink: './assets/third-image.jpg',
+    alt: 'third project image',
+    tech: ['html','css','javascript'],
+    liveVersion: '#',
+    source: '#'
+  },
+  {
+    id: '4',
+    name: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLink: './assets/fouth-image.jpg',
+    alt: 'fourth project image',
+    tech: ['html','css','javascript'],
+    liveVersion: '#',
+    source: '#'
+  }
+]
