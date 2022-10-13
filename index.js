@@ -3,7 +3,6 @@ const hamburger = document.getElementById('mobile-nav');
 const dropDown = document.getElementById('desktop-nav');
 const icon = document.querySelector('.fa-bars');
 const links = document.querySelectorAll('.nav-link');
-const projectsContainer = document.getElementById('projects-container');
 
 let isShown = false;
 hamburger.addEventListener('click', () => {
@@ -28,103 +27,82 @@ links.forEach((btn) => {
 });
 
 // POP UP WINDOWS
+const projectsContainer = document.querySelector('#projects-container');
+let show = '';
 
 const projectLists = [
   {
     id: '1',
     name: 'Multi-Post Stories Gain+Glory',
-    imageLink: '',
-    tech: ['ruby on rails','css','javascript', 'html'],
+    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
+    tech: ['ruby on rails', 'css', 'javascript', 'html'],
     liveVersion: '#',
-    source: '#'
+    source: '#',
   },
   {
     id: '2',
     name: 'Multi-Post Stories Gain+Glory',
-    imageLink: '',
-    tech: ['ruby on rails','css','javascript', 'html'],
+    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
+    tech: ['ruby on rails', 'css', 'javascript', 'html'],
     liveVersion: '#',
-    source: '#'
+    source: '#',
   },
   {
     id: '3',
     name: 'Multi-Post Stories Gain+Glory',
-    imageLink: '',
-    tech: ['ruby on rails','css','javascript', 'html'],
+    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
+    tech: ['ruby on rails', 'css', 'javascript', 'html'],
     liveVersion: '#',
-    source: '#'
+    source: '#',
   },
   {
     id: '4',
     name: 'Multi-Post Stories Gain+Glory',
-    imageLink: '',
-    tech: ['ruby on rails','css','javascript', 'html'],
+    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
+    tech: ['ruby on rails', 'css', 'javascript', 'html'],
     liveVersion: '#',
-    source: '#'
+    source: '#',
   },
   {
     id: '5',
     name: 'Multi-Post Stories Gain+Glory',
-    imageLink: '',
-    tech: ['ruby on rails','css','javascript', 'html'],
+    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
+    tech: ['ruby on rails', 'css', 'javascript', 'html'],
     liveVersion: '#',
-    source: '#'
+    source: '#',
   },
   {
     id: '6',
     name: 'Multi-Post Stories Gain+Glory',
-    imageLink: '',
-    tech: ['ruby on rails','css','javascript', 'html'],
+    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
+    tech: ['ruby on rails', 'css', 'javascript', 'html'],
     liveVersion: '#',
-    source: '#'
+    source: '#',
   },
-]
+];
+// tooglepopup
+projectLists.forEach((data) => {
+  show += `
+        <div class="projects-card">   
+            <img class="image-holder" src=${data.imageLink} />
+                <div class="text-container" >
+                <h3 class="project-header">${data.name}</h3>
+                  <ul class="project-language">
+                    <li class="language ruby">${data.tech[0]}</li>
+                    <li class="language css">${data.tech[1]}</li>
+                    <li class="language js">${data.tech[2]}</li>
+                    <li class="language html">${data.tech[3]}</li>
+                  </ul>
+                  <div class="button">
+                    <button type="button">See Project</button>
+                    </div>   
+                </div>         
+        </div>
+  `;
+  projectsContainer.innerHTML = show;
+});
+function closePop(){
 
-projectLists.map((item) => {
-  const projectCard = document.createElement('div');
-  projectCard.className = 'projects-card';
-
-  const imageHolder = document.createElement('div');
-  imageHolder.className = 'image-holder';
-  projectCard.appendChild(imageHolder);
-   
-  const textContainer = document.createElement('div');
-  textContainer.className = 'text-container';
-
-  //creating project header
-  const projectHeader = document.createElement('div');
-  projectHeader.className = 'project-header';
-  projectHeader.innerText = item.name;
-  textContainer.appendChild(projectHeader);
-  
-  //creating unordered list
-  const projectLanguage = document.createElement('ul');
-  projectLanguage.className = 'project-language';
-  const firstList = document.createElement('li');
-  firstList.className = 'language ruby';
-  firstList.innerText = item.tech[0];
-  projectLanguage.appendChild(firstList);
-  const secondList = document.createElement('li');
-  secondList.className = 'language css';
-  secondList.innerText = item.tech[1];
-  projectLanguage.appendChild(secondList);
-  const thirdList = document.createElement('li');
-  thirdList.className = 'language js';
-  thirdList.innerText = item.tech[2];
-  projectLanguage.appendChild(thirdList);
-  const fourthList = document.createElement('li');
-  fourthList.className = 'language html';
-  fourthList.innerText = item.tech[3];
-  projectLanguage.appendChild(fourthList);
-  textContainer.appendChild(projectLanguage);
-
-  //creating button element
-  // add eventlistener to button 
-  const projButton = document.createElement('button');
-  projButton.className = 'button';
-  projButton.innerText = 'See Project';
-  textContainer.appendChild(projButton);
-
-  projectCard.appendChild(textContainer);
-  projectsContainer.appendChild(projectCard);
-})
+}
+const closeBtn=document.getElementById('close-btn');
+closeBtn.addEventListener("click",)
