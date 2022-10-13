@@ -165,6 +165,7 @@ seeBtn.forEach((btn) => {
   });
 });
 
+// eslint-disable-next-line no-unused-vars
 function closePopup() {
   const close = document.querySelector('#close');
   close.addEventListener('click', () => {
