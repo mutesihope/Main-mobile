@@ -99,7 +99,7 @@ const projectLists = [
     name: 'Multi-Post Stories Gain+Glory',
     title: 'Keep track of hundreds of components',
     popDescription,
-    imageLink: './icons/desktopimage/SnapshootPortfolio.png',
+    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
     tech: ['Codekit', 'Github', 'Ruby on rails', 'css', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#',
@@ -188,7 +188,7 @@ function showError(message) {
 
 form.onsubmit = (e) => {
   const { email } = form.elements;
-  if (email.value.toLowerCase() !== email.value) {
+  if (email.value.toLowerCase() != email.value) {
     e.preventDefault();
     errMessage.innerHTML = showError('Email should be in lower case');
   } else {
