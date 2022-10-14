@@ -185,4 +185,15 @@ function showError(message) {
     </div>
   `);
 }
-// storing data in browswer
+
+form.onsubmit = (e) => {
+  const { email } = form.elements;
+  if (email.value.toLowerCase() !== email.value) {
+    e.preventDefault();
+    errMessage.innerHTML = showError('Email should be in lower case');
+  } else {
+    errMessage.innerHTML = '';
+  }
+  return true;
+};
+
