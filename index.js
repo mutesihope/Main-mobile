@@ -39,7 +39,7 @@ const projectLists = [
     name: 'Multi-Post Stories Gain+Glory',
     title: 'Keep track of hundreds of components',
     popDescription,
-    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
+    imageLink: './icons/desktopimage/SnapshootPortfolio.png',
     tech: ['Codekit', 'Github', 'Ruby on rails', 'css', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#',
@@ -51,7 +51,7 @@ const projectLists = [
     name: 'Multi-Post Stories Gain+Glory',
     title: 'Keep track of hundreds of components',
     popDescription,
-    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
+    imageLink: './icons/desktopimage/SnapshootPortfolio.png',
     tech: ['Codekit', 'Github', 'Ruby on rails', 'css', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#',
@@ -63,7 +63,7 @@ const projectLists = [
     name: 'Multi-Post Stories Gain+Glory',
     title: 'Keep track of hundreds of components',
     popDescription,
-    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
+    imageLink: './icons/desktopimage/SnapshootPortfolio.png',
     tech: ['Codekit', 'Github', 'Ruby on rails', 'css', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#',
@@ -75,7 +75,7 @@ const projectLists = [
     name: 'Multi-Post Stories Gain+Glory',
     title: 'Keep track of hundreds of components',
     popDescription,
-    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
+    imageLink: './icons/desktopimage/SnapshootPortfolio.png',
     tech: ['Codekit', 'Github', 'Ruby on rails', 'css', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#',
@@ -87,7 +87,7 @@ const projectLists = [
     name: 'Multi-Post Stories Gain+Glory',
     title: 'Keep track of hundreds of components',
     popDescription,
-    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
+    imageLink: './icons/desktopimage/SnapshootPortfolio.png',
     tech: ['Codekit', 'Github', 'Ruby on rails', 'css', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#',
@@ -99,7 +99,7 @@ const projectLists = [
     name: 'Multi-Post Stories Gain+Glory',
     title: 'Keep track of hundreds of components',
     popDescription,
-    imageLink: '/icons/desktopimage/SnapshootPortfolio.png',
+    imageLink: './icons/desktopimage/SnapshootPortfolio.png',
     tech: ['Codekit', 'Github', 'Ruby on rails', 'css', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#',
@@ -174,3 +174,25 @@ function closePopup() {
     modal.classList.remove('active');
   });
 }
+
+const form = document.getElementById('form-section');
+const errMessage = document.getElementById('error-message');
+
+function showError(message) {
+  return (`
+    <div class='error-message'>
+      ${message}
+    </div>
+  `);
+}
+
+form.onsubmit = (e) => {
+  const { email } = form.elements;
+  if (email.value.toLowerCase() !== email.value) {
+    e.preventDefault();
+    errMessage.innerHTML = showError('Email should be in lower case');
+  } else {
+    errMessage.innerHTML = '';
+  }
+  return true;
+};
