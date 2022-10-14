@@ -700,6 +700,13 @@ footer {
   opacity: 0.7;
   background: #c1c7d0;
 }
+.errors{
+  font-size: 17px;
+  color: red;
+  text-align: center;
+
+}
+
 
 /* DESKTOP MEDIA QUERY */
 @media screen and (min-width: 786px) {
@@ -946,5 +953,11 @@ footer {
 
   .bottom-icon .icon {
     margin-top: 70px;
+  }
+  .errors{
+    font-size: 17px;
+    color: red;
+    text-align: center;
+  
   }
 }
